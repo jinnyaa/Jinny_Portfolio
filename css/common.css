@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* 변수설정 */
+
+:root{
+    /* font */
+    --primary-font-en : "Pretendard", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --primary-font-ko : 'Pretendard', -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", helvetica, "Apple SD Gothic Neo",sans-serif;
+
+    --title-size-xxl: 8.5rem;
+    --title-size-xl: 6.5rem;
+    --title-size-lg: 5.1rem;
+    --title-size-md: 4rem;
+    --title-size-sm: 2.8rem;
+    --title-size-sx: 2rem;
+  
+    --desc-size-md: 1rem;
+    --desc-size-sm: 0.95rem;
+    --desc-size-sx: 0.8rem;
+    --desc-size-sxx: 0.7rem;
+
+    /* color */
+    --primary-color : #212121;
+
+    /* 좌우 여백 */
+    --margin:24px
+}

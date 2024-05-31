@@ -3,9 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Jinny Portfolio</title>
+    <title>🇯 🇮 🇳 🇳 🇾  🇵 🇴 🇷 🇹 🇫 🇴 🇱 🇮 🇴 </title>
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <!-- favicon -->
+    <link rel="icon" href="./assets/favicon/favicon.ico" sizes="any"><!-- 32×32 -->
+    <link rel="apple-touch-icon" href="./assets/favicon/apple-touch-icon.png"><!-- 180×180 -->
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
     <!-- og -->
     <!-- reset css -->
     <link rel="stylesheet" href="./assets/styles/reset.css">
@@ -13,54 +16,59 @@
     <link rel="stylesheet" href="./assets/styles/fonts.css">
     <!-- style -->
     <link rel="stylesheet" href="./assets/styles/global.css">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
     <!-- jQuery -->
     <!-- js -->
-    
+
     <!-- plugIn -->
-    
+
 </head>
 
 <body>
     <header>
-        <a href="#">
-            <img src="" alt="logo">
-        </a>
+        <div id="go-to-top">
+            <img src="./images/logo.png" alt="logo">
+        </div>
 
-        <ul class="menu">
-            <li>Home,</li>
-            <li>Project,</li>
-            <li>Carrers,</li>
-            <li>About Me </li>
+        <ul class="menu active">
+            <li class="menu-txt active"><a href="#">Home,</a></li>
+            <li class="menu-txt"><a href="#">Project,</a></li>
+            <li class="menu-txt"><a href="#">Carrers,</a></li>
+            <li class="menu-txt"><a href="#">About Me</a></li>
         </ul>
 
+        <div class="ghost-menu">
         <a href="#">
             <img src="" alt="menu">
         </a>
+        </div>
     </header>
 
     <main>
         <!-- home-top -->
         <section class="home-top">
-            <div>*표지 수정 예정*</div>
-
+            <div class="home-top-main">*표지 수정 예정*</div>
+        
             <div class="homefooter">
                 <div class="homefooter-box-left">
                     <ul>
                         <li>Focus</li>
                         <li>Publishing</li>
                     </ul>
-                    <div class="homefooter-box-middle">
-                        <ul>
-                            <li>2024 Portfolio</li> 
-                        </ul>
-                    </div>
-                    <div class="homefooter-box-right">
-                        <ul>
-                            <li>Contact</li>
-                            <li><a target="_blank" href="mailto:leejinsun14@naver.com" >leejinsun14@naver.com</a></li>
-                        </ul>
-                    </div>
+                </div>
+                <div class="homefooter-box-middle">
+                    <ul>
+                        <li>2024 Portfolio</li>
+                    </ul>
+                </div>
+                <div class="homefooter-box-right">
+                    <ul>
+                        <li>Contact</li>
+                        <li><a target="_blank" href="mailto:leejinsun14@naver.com">leejinsun14@naver.com</a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <!-- home-bottom -->
@@ -73,7 +81,7 @@
                     <li>디자인의 새로운 지평을 탐색하고, 성장을 추구하는, <strong><i> Web Publisher</i></strong></li>
                 </ul>
             </div>
-            
+
             <div class="homebottom-sidetxtbox">
                 <ul>
                     <li>Envisioning Tomorrow</li>
@@ -108,26 +116,26 @@
                     </div>
 
                     <!-- 프로젝트 목차순서 -->
-                    <ul>
-                        <li class="ploject-no active">( 1 / 3 )</li>
-                        <li class="ploject-no">( 2 / 3 )</li>
-                        <li class="ploject-no">( 3 / 3 )</li>
+                    <ul class="project-index">
+                        <li class="project-no active">( 1 / 3 )</li>
+                        <li class="project-no">( 2 / 3 )</li>
+                        <li class="project-no">( 3 / 3 )</li>
                     </ul>
                 </div>
 
                 <!-- 상세페이지 이동 영역 -->
-                <div class="project-detail">
-                    <div class="project-detail-part1">
+                <div class="project-detail-container">
+                    <div class="project-detail part1">
                         <a href="#">
                             <img src="" alt="">
                         </a>
                     </div>
-                    <div class="project-detail-part2">
+                    <div class="project-detail part2">
                         <a href="#">
                             <img src="" alt="">
                         </a>
                     </div>
-                    <div class="project-detail-part3">
+                    <div class="project-detail part3">
                         <a href="#">
                             <img src="" alt="">
                         </a>
@@ -143,74 +151,74 @@
                     <h2>What I Did,</h2>
                     <h3>Highlights Of My Career Journey</h3>
                 </div>
-            <div class="carrers-txt-box2">
-                <p>다양한 프로젝트의 기획경험은 전략적 사고와 고객의 요구사항의 이해, 효과적인 설득 능력을 키웠습니다.</p>
-                <p>이는 사용자 중심의 디자인을 개발하고 효과적인 커뮤니케이션을 통해 협업하는 데 중요한 역할이 될 수 있다고 생각합니다.</p>
-                <p>또한 창의적이고 실현가능한 아이디어를 구체화해 사용자 중심의 접근으로 사용자 경험을 향상시킬 수 있습니다.</p>
-            </div>
+                <div class="carrers-txt-box2">
+                    <p>다양한 프로젝트의 기획경험은 전략적 사고와 고객의 요구사항의 이해, 효과적인 설득 능력을 키웠습니다.</p>
+                    <p>이는 사용자 중심의 디자인을 개발하고 효과적인 커뮤니케이션을 통해 협업하는 데 중요한 역할이 될 수 있다고 생각합니다.</p>
+                    <p>또한 창의적이고 실현가능한 아이디어를 구체화해 사용자 중심의 접근으로 사용자 경험을 향상시킬 수 있습니다.</p>
+                </div>
             </div>
             <!-- advertising marketing -->
             <div class="carrers-contents-container">
                 <div class="carrers-contents box1">
-                <div class="carrers-contents-job">
-                    <div class="carrers-contents-field">Advertaising Marketing</div>
-                    <div class="carrers-contents-position">Project Leader</div>
+                    <div class="carrers-contents-job">
+                        <div class="carrers-contents-field">Advertaising Marketing</div>
+                        <div class="carrers-contents-position">Project Leader</div>
+                    </div>
+                    <div class="carrers-contents-jobdetail">
+                        <h3>독일 매체사 광고 기획 및 집행 / 국내 브랜드 광고 기획안 작성 / 광고 시안 제작</h3>
+                    </div>
+                    <div class="carrers-contents-jobdate">
+                        <p>2022.11</p>
+                        <p>-</p>
+                        <p>2023.12</p>
+                    </div>
+                    <div class="carrers-gotodetail">
+                        <img src="./images/index-carrers-gotodetail.svg" alt="go-to-detail-arrow">
+                    </div>
                 </div>
-            <div class="carrers-contents-jobdetail">
-                <h3>독일 매체사 광고 기획 및 집행 / 국내 브랜드 광고 기획안 작성 / 광고 시안 제작</h3>
-            </div>
-            <div class="carrers-contents-jobdate">
-               <p>2022.11</p>
-               <p>-</p>
-               <p>2023.12</p>
-            </div>
-            <div class="carrers-gotodetail">
-                <img src="./images/index-carrers-gotodetail.svg" alt="go-to-detail-arrow">
-            </div>
-            </div>
-            <!-- sigital marketing -->
-            <div class="carrers-contents box2">
-                <div class="carrers-contents-job">
-                    <div class="carrers-contents-field">Digital Marketing</div>
-                    <div class="carrers-contents-position">Internship</div>
+                <!-- sigital marketing -->
+                <div class="carrers-contents box2">
+                    <div class="carrers-contents-job">
+                        <div class="carrers-contents-field">Digital Marketing</div>
+                        <div class="carrers-contents-position">Internship</div>
+                    </div>
+                    <div class="carrers-contents-jobdetail">
+                        <h3>국내 브랜드 디지털 마케팅 전략 기획 및 광고 집행 / 랜딩페이지 촬영 및 제작</h3>
+                    </div>
+                    <div class="carrers-contents-jobdate">
+                        <p>2022.05</p>
+                        <p>-</p>
+                        <p>2022.07</p>
+                    </div>
+                    <div class="carrers-gotodetail">
+                        <img src="./images/index-carrers-gotodetail.svg" alt="go-to-detail-arrow">
+                    </div>
                 </div>
-            <div class="carrers-contents-jobdetail">
-                <h3>국내 브랜드 디지털 마케팅 전략 기획 및 광고 집행 /  랜딩페이지 촬영 및 제작</h3>
-            </div>
-            <div class="carrers-contents-jobdate">
-               <p>2022.05</p>
-               <p>-</p>
-               <p>2022.07</p>
-            </div>
-            <div class="carrers-gotodetail">
-                <img src="./images/index-carrers-gotodetail.svg" alt="go-to-detail-arrow">
-            </div>
-            </div>
-            <!-- performance marketing -->
-            <div class="carrers-contents box3 ">
-                <div class="carrers-contents-job">
-                    <div class="carrers-contents-field">Performance Marketing</div>
-                    <div class="carrers-contents-position">Internship</div>
+                <!-- performance marketing -->
+                <div class="carrers-contents box3 ">
+                    <div class="carrers-contents-job">
+                        <div class="carrers-contents-field">Performance Marketing</div>
+                        <div class="carrers-contents-position">Internship</div>
+                    </div>
+                    <div class="carrers-contents-jobdetail">
+                        <h3>국내 e-Commerce 브랜드 SA광고 집행 </h3>
+                    </div>
+                    <div class="carrers-contents-jobdate">
+                        <p>2021.06</p>
+                        <p>-</p>
+                        <p>2021.12</p>
+                    </div>
+                    <div class="carrers-gotodetail">
+                        <img src="./images/index-carrers-gotodetail.svg" alt="go-to-detail-arrow">
+                    </div>
                 </div>
-            <div class="carrers-contents-jobdetail">
-                <h3>국내 e-Commerce 브랜드 SA광고 집행 </h3>
             </div>
-            <div class="carrers-contents-jobdate">
-               <p>2021.06</p>
-               <p>-</p>
-               <p>2021.12</p> 
-            </div>
-            <div class="carrers-gotodetail">
-                <img src="./images/index-carrers-gotodetail.svg" alt="go-to-detail-arrow"> 
-            </div>
-            </div>
-        </div>
         </section>
 
         <section class="aboutme">
             <div class="aboutme-title">
-            <h2>My Toolbox : What I Bring To The Table </h2>
-            <img src="" alt="cart img">
+                <h2>My Toolbox : What I Bring To The Table </h2>
+                <img src="" alt="cart img">
             </div>
 
             <div class="aboutme-card-container">
@@ -223,7 +231,7 @@
                         <li>CSS Animation을 활용한 모션 구현</li>
                         <li>미디어 쿼리를 이용한 반응형 웹 제작</li>
                     </ul>
-                    <img src="" alt="logo">
+                    <img src="./images/logo.png" alt="logo">
                 </div>
                 <!-- card2 -->
                 <div class="aboutme-card card2">
@@ -235,7 +243,7 @@
                         <li>Mouse, Scroll, Pointer 등의 동적 이펙트 구현</li>
                         <li>비동기함수 활용 SetTimeout( ), SetInterval( ) 사용</li>
                     </ul>
-                    <img src="" alt="logo">
+                    <img src="./images/logo.png" alt="logo">
                 </div>
                 <!-- card3 -->
                 <div class="aboutme-card card3">
@@ -244,7 +252,7 @@
                         <li>GitHub를 이용한 작업물 저장 및 버전 관리</li>
                         <li>organization를 이용한 팀 프로젝트 협업</li>
                     </ul>
-                    <img src="" alt="logo">
+                    <img src="./images/logo.png" alt="logo">
                 </div>
                 <!-- card4 -->
                 <div class="aboutme-card card4">
@@ -255,8 +263,8 @@
                         <li>이미지 편집 및 디자인</li>
                         <li>사용자 고려 UX/Ui 디자인</li>
                         <li>피그마 활용 와이어프레임, 프로토타입 제작</li>
-                     </ul>
-                    <img src="" alt="logo">
+                    </ul>
+                    <img src="./images/logo.png" alt="logo">
                 </div>
                 <!-- card5 -->
                 <div class="aboutme-card card5">
@@ -265,44 +273,75 @@
                         <li>Naver Gfa, Kakaomoment, Meta, Google Ads 광고 세팅 및 캠페인 운영</li>
                         <li>지면별 특징을 고려한 광고 소재 제작</li>
                     </ul>
-                    <img src="" alt="logo">
+                    <img src="./images/logo.png" alt="logo">
                 </div>
                 <!-- card6 -->
                 <div class="aboutme-card card6">
                     <div class="aboutme-card-title">Google Tools</div>
                     <ul class="aboutme-card-txt">
-                        <li>HTML5/ CSS3</li>
-                        <li>Flex, Grid, Position 레이아웃 구현</li>
-                        <li>CSS Animation을 활용한 모션 구현</li>
-                        <li>미디어 쿼리를 이용한 반응형 웹 제작</li>
+                        <li>Google Ads- 캠페인 관리 및 키워드 관리</li>
+                        <li>GA4- 행동 데이터 분석 및 캠페인 보고서 추출, 보조 측정 기준을 활용한 사용자 분석</li>
+                        <li>GTM- 관리자 코드 설치, 이벤트 GA 수집</li>
                     </ul>
-                    <img src="" alt="logo">
+                    <img src="./images/logo.png" alt="logo">
                 </div>
                 <!-- card7 -->
                 <div class="aboutme-card card7">
-                    <div class="aboutme-card-title">웹 표준과 접근성을 고려한 시멘틱 마크업</div>
+                    <div class="aboutme-card-title">Indesign</div>
+                    <div class="aboutme-card-title">Premiere Pro</div>
                     <ul class="aboutme-card-txt">
-                        <li>HTML5/ CSS3</li>
-                        <li>Flex, Grid, Position 레이아웃 구현</li>
-                        <li>CSS Animation을 활용한 모션 구현</li>
-                        <li>미디어 쿼리를 이용한 반응형 웹 제작</li>
+                        <li>인디자인 활용 랜딩페이지 제작</li>
+                        <li>영상 촬영 및 편집: Cut, Audio, Subtitle, Transitions</li>
+                        <li>애니메이션 및 전환 효과 적용:Keyframe Animation, Effect Application</li>
                     </ul>
-                    <img src="" alt="logo">
+                    <img src="./images/logo.png" alt="logo">
                 </div>
                 <!-- card8 -->
                 <div class="aboutme-card card8">
-                    <div class="aboutme-card-title">웹 표준과 접근성을 고려한 시멘틱 마크업</div>
+                    <div class="aboutme-card-title">Ms Office</div>
                     <ul class="aboutme-card-txt">
-                        <li>HTML5/ CSS3</li>
-                        <li>Flex, Grid, Position 레이아웃 구현</li>
-                        <li>CSS Animation을 활용한 모션 구현</li>
-                        <li>미디어 쿼리를 이용한 반응형 웹 제작</li>
+                        <li>PPT- 도구 기능을 활용한 기획안 PT 장표화</li>
+                        <li>Exel- vlookup, filter, pivot 기능 활용 데이터 관리 및 시각화</li>
+                        <li>Word- 문서정리</li>
+                        <li>Outlook - 메일 회신 및 FW, 서명</li>
                     </ul>
-                    <img src="" alt="logo">
+                    <img src="./images/logo.png" alt="logo">
                 </div>
-
             </div>
         </section>
+
+        <!-- txt-effect -->
+        <section class="txteffect">
+            <div class="txteffect-container">
+                *수정예정*
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <div class="footer-main">
+                <h1>SAY HI!</h1>
+            </div>
+            <div class="footer-box">
+                <div class="footer-box-contents">
+                <div class="footer-box-gitstudy">
+                    <p>Git Study</p>
+                    <div class="go-to-git"><a href="#"><img src="./images/index-carrers-gotodetail.svg" alt="go-to-gitstudy"></a>
+                    </div>
+                </div>
+                <div class="footer-box-gitportfolio">
+                    <p>Git Portfolio</p>
+                    <div class="go-to-git"><a href="#"><img src="./images/index-carrers-gotodetail.svg" alt="go-to-gitportfolio"></a>
+                    </div>
+                </div>
+                </div>
+                <div id="go-to-top">Back to Top</div>
+                <div class="footer-box-contact">
+                    <p>+82 10.7401.7846</p>
+                    <p><a target="_blank" href="mailto:leejinsun14@naver.com">leejinsun14@naver.com</a></p>
+                </div>
+            </div>
+        </footer>
     </main>
 </body>
 
