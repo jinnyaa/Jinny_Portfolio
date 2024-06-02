@@ -9,7 +9,10 @@ header{width: 100%; height: 60px; display: flex; position: fixed;  padding: 0 24
 header .menu{width: 470px; max-width: 470px; min-width: 200px; height: 40px; display: flex; justify-content: space-evenly; margin: auto;
 font-size: var(--desc-size-sm);
 }
-header .menu li{width: 100%;}
+header .menu li{width: 100%; height: 100%;}
+header .menu li:hover{font-weight: 100; font-style: italic;}
+header .menu li.active{font-weight: 100; font-style: italic;}
+
 header .menu li a{display: block; line-height: 40px;}
 /* logo */
 header #go-to-top {display: flex; }
@@ -23,7 +26,8 @@ header .ghost-menu{ width: 84px; height: 60px; position: absolute; right: 0; top
 
 
 /***** footer *****/
-footer .footer-box{display: grid; grid-template-columns: 1fr 1fr 1fr; height: 60px; align-items: center;}
+footer{position: relative; width: 100%; height: 100vh;}
+footer .footer-box{display: grid; grid-template-columns: 1fr 1fr 1fr; height: 60px; align-items: center; bottom: 0; position: absolute; width: 100%; padding: 0 24px 20px;}
 
 footer .go-to-git{width: 30px; height: 30px; min-width: 30px; min-height: 30px; background-color: var(--primary-color); border-radius: 50%; margin: 0 10px;}
 footer .go-to-git img{width: 50%; display: block; margin: auto; height: 100%;}

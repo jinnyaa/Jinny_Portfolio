@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>🇯 🇮 🇳 🇳 🇾  🇵 🇴 🇷 🇹 🇫 🇴 🇱 🇮 🇴 </title>
+    <title>ᴊɪɴɴʏ ᴘᴏʀᴛғᴏʟɪᴏ </title>
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <!-- favicon -->
     <link rel="icon" href="./assets/favicon/favicon.ico" sizes="any"><!-- 32×32 -->
@@ -19,8 +19,9 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
     <!-- jQuery -->
+    <link rel="stylesheet" href="./js/index.js">
     <!-- js -->
-
+    <script src="./assets/jquery-3.7.1.min.js"></script>
     <!-- plugIn -->
 
 </head>
@@ -32,16 +33,16 @@
         </div>
 
         <ul class="menu active">
-            <li class="menu-txt active"><a href="#">Home,</a></li>
-            <li class="menu-txt"><a href="#">Project,</a></li>
-            <li class="menu-txt"><a href="#">Carrers,</a></li>
-            <li class="menu-txt"><a href="#">About Me</a></li>
+            <li class="menu-txt menuhome"><a href="#">Home,</a></li>
+            <li class="menu-txt menuproject"><a href="#">Project,</a></li>
+            <li class="menu-txt menucarrers"><a href="#">Carrers,</a></li>
+            <li class="menu-txt menuaboutme"><a href="#">About Me</a></li>
         </ul>
 
         <div class="ghost-menu">
-        <a href="#">
-            <img src="" alt="menu">
-        </a>
+            <a href="#">
+                <img src="" alt="menu">
+            </a>
         </div>
     </header>
 
@@ -49,7 +50,7 @@
         <!-- home-top -->
         <section class="home-top">
             <div class="home-top-main">*표지 수정 예정*</div>
-        
+
             <div class="homefooter">
                 <div class="homefooter-box-left">
                     <ul>
@@ -161,8 +162,9 @@
             <div class="carrers-contents-container">
                 <div class="carrers-contents box1">
                     <div class="carrers-contents-job">
-                        <div class="carrers-contents-field">Advertaising Marketing</div>
-                        <div class="carrers-contents-position">Project Leader</div>
+                        <div class="carrers-contents-field">Advertaising Marketing
+                            <div class="carrers-contents-position">Project Leader</div>
+                        </div>
                     </div>
                     <div class="carrers-contents-jobdetail">
                         <h3>독일 매체사 광고 기획 및 집행 / 국내 브랜드 광고 기획안 작성 / 광고 시안 제작</h3>
@@ -173,14 +175,17 @@
                         <p>2023.12</p>
                     </div>
                     <div class="carrers-gotodetail">
+                        <a href="#">
                         <img src="./images/index-carrers-gotodetail.svg" alt="go-to-detail-arrow">
+                    </a>
                     </div>
                 </div>
-                <!-- sigital marketing -->
+                <!-- digital marketing -->
                 <div class="carrers-contents box2">
                     <div class="carrers-contents-job">
-                        <div class="carrers-contents-field">Digital Marketing</div>
-                        <div class="carrers-contents-position">Internship</div>
+                        <div class="carrers-contents-field">Digital Marketing
+                            <div class="carrers-contents-position">Internship</div>
+                        </div>
                     </div>
                     <div class="carrers-contents-jobdetail">
                         <h3>국내 브랜드 디지털 마케팅 전략 기획 및 광고 집행 / 랜딩페이지 촬영 및 제작</h3>
@@ -191,14 +196,17 @@
                         <p>2022.07</p>
                     </div>
                     <div class="carrers-gotodetail">
+                        <a href="#">
                         <img src="./images/index-carrers-gotodetail.svg" alt="go-to-detail-arrow">
+                    </a>
                     </div>
                 </div>
                 <!-- performance marketing -->
                 <div class="carrers-contents box3 ">
                     <div class="carrers-contents-job">
-                        <div class="carrers-contents-field">Performance Marketing</div>
-                        <div class="carrers-contents-position">Internship</div>
+                        <div class="carrers-contents-field">Performance Marketing
+                            <div class="carrers-contents-position">Internship</div>
+                        </div>
                     </div>
                     <div class="carrers-contents-jobdetail">
                         <h3>국내 e-Commerce 브랜드 SA광고 집행 </h3>
@@ -209,7 +217,9 @@
                         <p>2021.12</p>
                     </div>
                     <div class="carrers-gotodetail">
+                        <a href="#">
                         <img src="./images/index-carrers-gotodetail.svg" alt="go-to-detail-arrow">
+                    </a>
                     </div>
                 </div>
             </div>
@@ -235,8 +245,10 @@
                 </div>
                 <!-- card2 -->
                 <div class="aboutme-card card2">
+                    <div class="aboutme-card-titlebox">
                     <div class="aboutme-card-title">JavaScript</div>
                     <div class="aboutme-card-title">jQeury</div>
+                    </div>
                     <ul class="aboutme-card-txt">
                         <li>ES6+ 문법</li>
                         <li>비동기 통신 ​AJAX / JSON 데이터 활용</li>
@@ -256,10 +268,12 @@
                 </div>
                 <!-- card4 -->
                 <div class="aboutme-card card4">
+                    <div class="aboutme-card-titlebox">
                     <div class="aboutme-card-title">Figma</div>
                     <div class="aboutme-card-title">Photoshop</div>
-                    <div class="aboutme-card-title">illustration</div>
-                    <ul class="aboutme-card-txt">
+                    <div class="aboutme-card-title illustration">illustration</div>
+                    </div>
+                    <ul class="aboutme-card-txt card4">
                         <li>이미지 편집 및 디자인</li>
                         <li>사용자 고려 UX/Ui 디자인</li>
                         <li>피그마 활용 와이어프레임, 프로토타입 제작</li>
@@ -287,8 +301,10 @@
                 </div>
                 <!-- card7 -->
                 <div class="aboutme-card card7">
+                    <div class="aboutme-card-titlebox">
                     <div class="aboutme-card-title">Indesign</div>
                     <div class="aboutme-card-title">Premiere Pro</div>
+                    </div>
                     <ul class="aboutme-card-txt">
                         <li>인디자인 활용 랜딩페이지 제작</li>
                         <li>영상 촬영 및 편집: Cut, Audio, Subtitle, Transitions</li>
@@ -324,16 +340,18 @@
             </div>
             <div class="footer-box">
                 <div class="footer-box-contents">
-                <div class="footer-box-gitstudy">
-                    <p>Git Study</p>
-                    <div class="go-to-git"><a href="#"><img src="./images/index-carrers-gotodetail.svg" alt="go-to-gitstudy"></a>
+                    <div class="footer-box-gitstudy">
+                        <p>Git Study</p>
+                        <div class="go-to-git"><a href="#"><img src="./images/index-carrers-gotodetail.svg"
+                                    alt="go-to-gitstudy"></a>
+                        </div>
                     </div>
-                </div>
-                <div class="footer-box-gitportfolio">
-                    <p>Git Portfolio</p>
-                    <div class="go-to-git"><a href="#"><img src="./images/index-carrers-gotodetail.svg" alt="go-to-gitportfolio"></a>
+                    <div class="footer-box-gitportfolio">
+                        <p>Git Portfolio</p>
+                        <div class="go-to-git"><a href="#"><img src="./images/index-carrers-gotodetail.svg"
+                                    alt="go-to-gitportfolio"></a>
+                        </div>
                     </div>
-                </div>
                 </div>
                 <div id="go-to-top">Back to Top</div>
                 <div class="footer-box-contact">
@@ -343,6 +361,9 @@
             </div>
         </footer>
     </main>
+
+    <script src="./js/index.js"></script>
+
 </body>
 
 </html>
