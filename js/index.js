@@ -1,6 +1,33 @@
-$('#go-to-top').on('click',(e)=>{
+$('.go-to-top').on('click',(e)=>{
     window.scrollTo({top:0, behavior:"smooth"})
 })
+
+//메뉴 색상 변경
+$(document).ready(function(){
+    $(window).scroll(function(){
+        var scrollPos = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        var homeTopPos = $('.home-top').offset().top;
+        var homeTopHeight = $('.home-top').outerHeight();
+        var header = $('header');
+        var goToTopimg=$('.go-to-top img')
+        
+        if(scrollPos >= homeTopPos){
+            header.css('color', '#fff');
+            goToTopimg.css('filter','invert(100%)')
+        } else {
+            header.css('color', ''); 
+            goToTopimg.css('filter','')
+        }
+
+        if (scrollPos < homeTopPos || scrollPos >= (homeTopPos + homeTopHeight * 0.9)) {
+            header.css('color', '');
+            goToTopimg.css('filter','')
+        }
+    });
+});
+
+
 
 
 // 메뉴이동
@@ -98,3 +125,6 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(detail);
     });
 });
+
+
+

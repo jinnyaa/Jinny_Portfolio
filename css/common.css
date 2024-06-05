@@ -25,6 +25,7 @@
 
     /* color */
     --primary-color : #212121;
+    --primary-color-gray : #F8F8F8;
 
     /* 좌우 여백 */
     --margin:24px

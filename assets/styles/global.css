@@ -15,9 +15,9 @@ header .menu li.active{font-weight: 100; font-style: italic;}
 
 header .menu li a{display: block; line-height: 40px;}
 /* logo */
-header #go-to-top {display: flex; }
-header #go-to-top:hover {filter: invert(50%)}
-header #go-to-top img{height: 70%; cursor: pointer; position: absolute; align-self: center; }
+header .go-to-top {display: flex; }
+header .go-to-top:hover {filter: invert(50%)}
+header .go-to-top img{height: 70%; cursor: pointer; position: absolute; align-self: center;}
 /* menu */
 header .ghost-menu{ width: 84px; height: 60px; position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
 
@@ -42,3 +42,4 @@ footer .footer-box-gitportfolio{display: flex; margin-left: 10%;}
 footer #go-to-top{grid-column: 2 / 3; cursor: pointer;}
 footer .footer-box-contact{grid-column: 3 / 4;}
 footer .footer-box-contact p{text-align: right;}
+footer .go-to-top{cursor: pointer;}
