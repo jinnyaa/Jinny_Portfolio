@@ -123,7 +123,7 @@
 .aboutme-card{position:relative;transition:transform 0.5s;transform-style:preserve-3d;  min-width: 15vw; max-height: 380px; min-height: 250px; height: 380px;
 }
 .aboutme-card-front,.aboutme-card-back{width:100%;height:100%;position:absolute;backface-visibility:hidden; } 
-.aboutme-card-front{background-color:rgb(255, 255, 255);z-index:2; border-radius: 20px; box-shadow: 3px 3px 13px 3px #55555515; padding: 24px;} 
+
 .aboutme-card-back{background-color:rgb(255, 255, 255);transform:rotateY(180deg); text-align: left; display: grid; grid-template-rows: 1fr 2fr 1fr; grid-template-columns: 1fr; border-radius: 20px; padding: 20px;
     box-shadow: 3px 3px 13px 3px #55555515;} 
 .aboutme:hover .aboutme-card{transform:rotateY(180deg);}
@@ -142,7 +142,13 @@
 .aboutme-card-title.illustration{position: absolute; left: 0; top: 35px; margin-top: 10px;}
 .aboutme-card-txt.card4{margin-top: 30px;}
 
-.aboutme-card-front{background: url(../images/aboutme-card-cart.png) 50% no-repeat; background-size: 70%;}
+/* front card */
+.aboutme-card-front p:nth-child(2){font-size: var(--desc-size-sxxx); font-weight: 100;}
+.aboutme-card-front p:nth-child(3){font-family: 'Times New Roman', Times, serif; font-style: italic; font-size: var(--title-size-sxxx);}
+.aboutme-card-front .aboutme-card-front-getready{border: 1px solid #00DA33; border-radius: 50px; width: 60%; height: 13%; display: flex; justify-content: center; align-items: center; position: absolute; bottom: 5%; font-size: var(--desc-size-sxxx);}
+.aboutme-card-front{background: url(../images/aboutme-card-cart.png) 50% no-repeat; background-size: 60%; background-color:rgb(255, 255, 255);z-index:2; border-radius: 20px; box-shadow: 3px 3px 13px 3px #55555515; padding: 24px; display: flex; flex-direction: column; align-items: center; font-family: 'Times New Roman', Times, serif; font-style: italic;}
+
+.aboutme-card.card1 .aboutme-card-front img{position: absolute; top: 20%; left: 15%; height: 35%; transform: rotate(30deg);}
 
 
 /* txt-effect */
@@ -194,5 +200,33 @@ overflow: hidden; position: relative;
     }
     .aboutme-card-title{font-size: var(--desc-size-sx); padding: 0 7px; margin: 0 3px 0 0; border-radius: 15px;}
     .aboutme-card-txt{ font-size: var(--desc-size-sx);}
+}
+
+
+@media (min-width:1024px) and (max-width:1536px){
+  /* project */
+  .project .project-box h3{padding-top: 100px; }
+  .project .project-bg-title{font-size: 11rem; line-height: 0.9; width: 100%;}
+  .project .project-box .project-index .project-no{transform: translateY(500px);}
+  .project .project-detail-container .project-detail{width: 400px; height: 250px;}
+
+  /* carrers */
+  .carrers-txt-container{ margin: 0 auto 50px; padding-top: 80px;}
+  .carrers-contents-container .carrers-contents{ height: 150px;}
+
+  .carrers-txt-container .carrers-txt-box1 h2{font-size: var(--title-size-md);}
+  .carrers-txt-container .carrers-txt-box1 h3{font-size: var(--title-size-sxxx);}
+
+
+
+    /* aboutme */
+    .aboutme-title{padding-top: 80px; margin-bottom: 50px;}
+    .aboutme-card-container{width: 60%;}
+    .aboutme-card-container .aboutme-card{
+        height: 200px; width: 150px;
+    }
+    .aboutme-card-title{font-size: var(--desc-size-sx); padding: 0 7px; margin: 0 3px 0 0; border-radius: 15px;}
+    .aboutme-card-txt{ font-size: var(--desc-size-sx);}
+    
 }
 
