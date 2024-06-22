@@ -80,7 +80,7 @@ header{background-color: #fff;}
     background: rgb(202,180,254);
     background: linear-gradient(90deg, rgba(202,180,254,1) 0%, rgba(250,109,100,1) 100%);
     color: transparent;
-    -webkit-background-clip: text;
+    background-clip: text;
 }
 .uivison-title .parking{padding: 5px; border-radius: 20px; background-color: #F2797F; width: 7.5%; color: #fff; position: absolute; top: 0; right: 15%;}
 .uivison-title .easy{padding: 5px; border-radius: 20px; background-color: #CAB3FC; width: 7.5%; color: #fff; position: absolute; bottom: 0; left: 12%;}
