@@ -2,27 +2,25 @@ $('.go-to-top').on('click',(e)=>{
     window.scrollTo({top:0, behavior:"smooth"})
 })
 
-//메뉴 색상 변경
-$(document).ready(function(){
-    $(window).scroll(function(){
+// //메뉴 색상 변경
+$(document).ready(function() {
+    // Set the initial state of the header and goToTopimg
+    $('header').css('color', '#fff');
+    $('.go-to-top img').css('filter', 'invert(100%)');
+
+    $(window).scroll(function() {
         var scrollPos = $(window).scrollTop();
-        var windowHeight = $(window).height();
         var homeTopPos = $('.home-top').offset().top;
         var homeTopHeight = $('.home-top').outerHeight();
         var header = $('header');
-        var goToTopimg=$('.go-to-top img')
-        
-        if(scrollPos >= homeTopPos){
-            header.css('color', '#fff');
-            goToTopimg.css('filter','invert(100%)')
-        } else {
-            header.css('color', ''); 
-            goToTopimg.css('filter','')
-        }
+        var goToTopimg = $('.go-to-top img');
 
-        if (scrollPos < homeTopPos || scrollPos >= (homeTopPos + homeTopHeight * 0.9)) {
+        if (scrollPos >= homeTopPos && scrollPos < (homeTopPos + homeTopHeight * 0.9)) {
+            header.css('color', '#fff');
+            goToTopimg.css('filter', 'invert(100%)');
+        } else {
             header.css('color', '');
-            goToTopimg.css('filter','')
+            goToTopimg.css('filter', '');
         }
     });
 });
@@ -114,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (entry.isIntersecting) {
                 const partClass = entry.target.classList[1];
                 document.querySelector('.project-bg-title.active')?.classList.remove('active');
-                document.querySelector('.project-no').innerText = `( ${partClass[4]} / 3 )`;
+                document.querySelector('.project-no').innerText = `( ${partClass[4]} / 4 )`;
                 document.querySelector(`.project-bg-title.${partClass}`).classList.add('active');
             }
         });
@@ -128,3 +126,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+    document.addEventListener('DOMContentLoaded', function() {
+        const sections = document.querySelectorAll('.project-detail');
+        let isPaused = false;
+        
+        function checkIfInView() {
+            if (isPaused) return;
+
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                const isInView = (rect.top >= window.innerHeight / 2 - rect.height / 2) &&
+                                 (rect.bottom <= window.innerHeight / 2 + rect.height / 2);
+                
+                if (isInView) {
+                    isPaused = true;
+                    setTimeout(() => {
+                        isPaused = false;
+                    }, 1000);
+                }
+            });
+        }
+
+        window.addEventListener('scroll', () => {
+            if (!isPaused) {
+                checkIfInView();
+            } else {
+                window.scrollTo(0, window.pageYOffset);
+            }
+        });
+    });
