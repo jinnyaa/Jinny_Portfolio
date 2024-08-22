@@ -61,19 +61,19 @@
 
 /* project */
 
-.project {height: 100%; position: relative; padding-bottom: 100px;}
+.project {height: 100%; position: relative;}
 .project .project-container{height: 100%; width: 100%; }
 
-.project .project-box{width: 60%; margin: auto; position: sticky; top: 0; z-index: -99; text-align: center;}
-.project .project-box h3{padding-top: 200px; font-size: var(--title-size-sx);}
-.project .project-bg-title{position: absolute; font-size: 11rem; line-height: 1; width: 100%; left: 50%; transform: translateX(-50%); opacity: 0; margin-top: 50px; padding: 0; transition: .5s;}
+.project .project-box{width: 70%; margin: auto; position: sticky; top: 0; z-index: -99; text-align: center;}
+.project .project-box h3{padding-top: 200px; font-size: var(--title-size-sxx);}
+.project .project-bg-title{position: absolute; font-size: 9vw; line-height: 1; width: 100%; left: 50%; transform: translateX(-50%); opacity: 0; margin-top: 50px; padding: 0; transition: .5s; display: block; justify-content: center;}
 .project .project-bg-title.active{opacity: 1;}
 .project .project-box .project-index .project-no{position: sticky; width: 100%; display: block; font-size: var(--desc-size-sxx); text-align: center; transform: translateY(600px);}
 
 .project .project-detail-container{width: 100%; height: 100%; margin: 0 auto; z-index: 9999;}
-.project .project-detail-container .project-detail{width: 600px; height: 350px; background-color: #000000; margin: 1000px auto; transition: .5s; position: relative;
-overflow: hidden; box-shadow: 0px 8px 6px -6px #66666633
-
+.project .project-detail-container .project-detail{width: 28vw; height: 35vh; background-color: #000000; margin: 1000px auto; transition: .5s; position: relative;
+overflow: hidden; box-shadow: 0px 8px 6px -6px #66666633;
+max-height: 380px;
 }
 
 
@@ -136,11 +136,12 @@ overflow: hidden; box-shadow: 0px 8px 6px -6px #66666633
 
 /* aboutme */
 .aboutme{height:100vh; width: 100%; margin:0 auto; padding: 0; background-color:#F8F8F8;display:flex;flex-direction:column;align-items:center; }  
-.aboutme-title{font-size:var(--title-size-sxx);font-weight:lighter;display:flex;justify-content:center;padding-top:100px;position:relative; margin-bottom: 50px;} 
-.aboutme-title img{transform:scaleX(-1);width:25%;position:absolute;top:30%;right: -30%;transition:1s;} 
+.aboutme-title{font-size:var(--title-size-sxx);font-weight:lighter;display:flex;justify-content:center;padding-top:80px;position:relative; margin-bottom: 50px;} 
+/* .aboutme-title img{transform:scaleX(-1);width:25%;position:absolute;top:30%;right: -30%;transition:1s;}  */
 
-.aboutme-card-container{width:60%; ;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;grid-template-rows:1fr 1fr; gap:20px;} 
-.aboutme-card{position:relative;transition: 0.5s;transform-style:preserve-3d;  min-width: 13vw; max-height: 350px; min-height: 250px; height: 350px; width: 15vw;
+.aboutme-card-container{width:70%; ;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;grid-template-rows:1fr 1fr; gap:15px; height: 100%; padding-bottom: 30px;} 
+.aboutme-card{position:relative;transition: 0.5s;transform-style:preserve-3d;
+  width: 100%; height: 100%;
 }
 .aboutme-card-front,.aboutme-card-back{width:100%;height:100%;position:absolute;backface-visibility:hidden; } 
 
@@ -155,11 +156,11 @@ overflow: hidden; box-shadow: 0px 8px 6px -6px #66666633
 .aboutme-card.card7{transition-delay: .6s;}
 .aboutme-card.card8{transition-delay: .7s;}
 
-.aboutme-card-title{border-radius: 50px; border: 1px solid var(--primary-color); height: 35px; line-height: 35px; text-align: center; width: fit-content; padding: 0 15px; font-size: var(--desc-size-md); font-weight: bold; grid-row: 1 / 2; grid-column: 1 / 2; margin-right: 10px;}
+.aboutme-card-title{border-radius: 50px; border: 1px solid var(--primary-color); height: 35px; line-height: 35px; text-align: center; width: fit-content; padding: 0 10px; font-size: var(--desc-size-sm); font-weight: bold; grid-row: 1 / 2; grid-column: 1 / 2; margin-right: 5px;}
 .aboutme-card-txt{grid-row: 2 / 3; font-size: var(--desc-size-sm); line-height: 1.5;}
-.aboutme-card-container .aboutme-card img{grid-row: 3 / 4; height: 35%; bottom: 0; position: absolute; right: 20px;}
+.aboutme-card-container .aboutme-card img{grid-row: 3 / 4; height: 1.5vw; bottom: 0; position: absolute; right: 20px;}
 .aboutme-card-titlebox{display: flex;}
-.aboutme-card-title.illustration{position: absolute; left: 0; top: 35px; margin-top: 10px;}
+.aboutme-card-title.illustration{position: absolute; left: 0; top: 35px; margin-top: 5px; }
 .aboutme-card-txt.card4{margin-top: 30px;}
 
 /* front card */
@@ -170,7 +171,7 @@ overflow: hidden; box-shadow: 0px 8px 6px -6px #66666633
 
 /* txt-effect */
 
-.txteffect{height: 100vh; display: flex; justify-content: center; align-items: center; font-family: "Anton", sans-serif; font-size: 10rem; letter-spacing: .5rem; color: #000000; font-style: italic; margin: 300px 0 100px;}
+.txteffect{height: 100vh; display: flex; justify-content: center; align-items: center; font-family: "Anton", sans-serif; font-size: 8rem; letter-spacing: .3rem; color: #000000; margin: 100px 0 100px;}
 .branding, .digital, .design, .storytelling{transform: scaleY(1.5);margin: 0; padding: 0; width: auto; }
 .txteffect-container{width: 90%; height: 90%; margin: 24px; display: grid; grid-template-rows: 1fr 1fr 1fr; 
 overflow: hidden; position: relative;
@@ -222,10 +223,6 @@ footer .footer-main-gitportfolio{display: flex; margin-left: 10%;}
     .carrers-contents .carrers-contents-jobdetail{word-break: keep-all; font-size: var(--title-size-sxx);}
 
     /* aboutme */
-    .aboutme-card-container{width: 95%;}
-    .aboutme-card-container .aboutme-card{
-        height: 300px;
-    }
     .aboutme-card-title{font-size: var(--desc-size-sx); padding: 0 7px; margin: 0 3px 0 0; border-radius: 15px;}
     .aboutme-card-txt{ font-size: var(--desc-size-sx);}
 }
@@ -233,8 +230,6 @@ footer .footer-main-gitportfolio{display: flex; margin-left: 10%;}
 
 @media (min-width:1024px) and (max-width:1536px){
   /* project */
-  .project .project-box h3{padding-top: 100px; }
-  .project .project-bg-title{font-size: 11rem; line-height: 0.9; width: 100%;}
   .project .project-box .project-index .project-no{transform: translateY(500px);}
   .project .project-detail-container .project-detail{width: 400px; height: 250px;}
 
@@ -245,16 +240,7 @@ footer .footer-main-gitportfolio{display: flex; margin-left: 10%;}
   .carrers-txt-container .carrers-txt-box1 h2{font-size: var(--title-size-md);}
   .carrers-txt-container .carrers-txt-box1 h3{font-size: var(--title-size-sxxx);}
 
-
-
     /* aboutme */
-    .aboutme-title{padding-top: 80px; margin-bottom: 50px;}
-    .aboutme-card-container{width: 60%;}
-    .aboutme-card-container .aboutme-card{
-        height: 200px; width: 150px;
-    }
-    .aboutme-card-title{font-size: var(--desc-size-sx); padding: 0 7px; margin: 0 3px 0 0; border-radius: 15px;}
-    .aboutme-card-txt{ font-size: var(--desc-size-sx);}
-    
+    .aboutme-card-title{font-size: var(--desc-size-sm); padding: 0 7px; margin: 0 3px 0 0;}
 }
 
