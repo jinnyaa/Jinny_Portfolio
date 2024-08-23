@@ -86,7 +86,7 @@ header{background-color: #fff;}
 
 .styleguide .colorpallette-box{margin-bottom: 90px;}
 .styleguide .colorpallette-box p{font-weight: normal; line-height: 1.5;}
-.styleguide .color-wrap{display: flex; width: 60%; height:160px;}
+.styleguide .color-wrap{display: flex; width: 60%; height: 150px;}
 .styleguide .color-wrap .color-box{display: grid; grid-template-rows: 2fr .5fr; width: 100%; margin-right: 20px; box-shadow: 2px 2px 5px 1px #55555515; border-radius: 10px;}
 
 .styleguide .color-wrap .color-bg{border-radius: 10px 10px 0 0;}
@@ -193,3 +193,25 @@ footer .go-to-top{cursor: pointer;}
 
 .go-to-git{background-color: #000; border-radius: 50%; padding: 10px; width: 30px; height: 30px;}
 .go-to-git img{width: 100%;}
+
+
+@media (min-width:1024px) and (max-width:1771px){
+    .side-txt-role-wrap{font-size: var(--desc-size-sx);}
+    .side-txt-row > li{font-size: var(--desc-size-sxx);}
+
+    .page-index-txt.txtbox1::before{content: ""; width: 30%; height: 2px; background-color: #F8F8F8; position: absolute; left: -25%; top: 45%;}
+    .page-index-txt.txtbox2::before{content: ""; width: 40%; height: 2px; background-color: #F8F8F8; position: absolute; right: -30%; top: 20%;}
+    .page-index-txt.txtbox3::before{content: ""; width: 20%; height: 2px; background-color: #F8F8F8; position: absolute; right: -10%; top: 20%;}
+    .page-index-txt.txtbox4::before{content: ""; width: 60%; height: 2px; background-color: #F8F8F8; position: absolute; right: -30%; top: 20%;}
+    .page-index-txt.txtbox5::before{content: ""; width: 20%; height: 2px; background-color: #F8F8F8; position: absolute; left: -20%; top: 20%;}
+    .page-index-txt.txtbox6::before{content: ""; width: 30%; height: 2px; background-color: #F8F8F8; position: absolute; left: -30%; top: 20%;}
+    .page-index-txt.txtbox7::before{content: ""; width: 40%; height: 2px; background-color: #F8F8F8; position: absolute; right: -30%; top: 20%;}
+    .page-index-txt.txtbox8::before{content: ""; width: 40%; height: 2px; background-color: #F8F8F8; position: absolute; right: -20%; top: 20%;}
+
+    .review-right h2{font-size: var(--title-size-sx);}
+    .review-right h5{font-size: var(--desc-size-lg); font-weight: 600;}
+
+    .side .btn{width: 50%;}
+
+    .styleguide .color-wrap{height: 130px;}
+}
