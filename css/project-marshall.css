@@ -20,30 +20,34 @@ header{background-color: #fff;}
 .side-container ul:nth-child(1){font-weight: bold; font-family: var(--primary-font-en); font-size: var(--desc-size-lg);}
 .side-container ul:nth-child(2){font-weight: bold; border-bottom: none; font-family: var(--primary-font-en); font-size: var(--desc-size-lg);}
 .side-title{font-family: var(--primary-font-en); font-size: var(--desc-size-lg); font-weight: bold; align-content: center;}
-.side .tools-icon{display: flex; border-bottom: none; text-align: right; width: 40%;}
+.side .tools-icon{display: flex; border-bottom: none; text-align: right; width: 30%;}
 .side .tools-icon img{width: 100%;}
 .side .percent{background-color: #000; width: 35%; color: #fff; height: 15px; line-height: 15px; font-size: var(--desc-size-sxx); border-radius:20px;}
 
 .side .btn-wrap{display: flex; width: 80%; margin:0 auto; justify-content: space-around;}
-.side .btn{width: 45%; background-color: #000; border-radius: 20px; color: #ddd; height: 40px; line-height: 40px; display: flex; justify-content: center;}
+.side .btn{width: 45%; background-color: #000; border-radius: 20px; color: #ddd; height: 40px; line-height: 40px; display: flex; justify-content: center; }
 .side .btn:first-child img{margin-left: 5px;}
 .side .btn:last-child img{margin-left: 10px;}
 .side .btn img{height: 100%; padding: 10px 0;}
 
 
 /* project */
-.title{height: 100vh; padding-top: 60px; background: url(../images/project/tamburins/title-bg.png) no-repeat; background-size: 150%;}
+/* .project{width: 70%;} */
+.title{height: 100vh; padding-top: 60px; margin: 0 auto; background: url(../images/project/marshall/title-bg.png) 50% 90% no-repeat; background-size: 70%; color: #fff;
+}
 .title-txt{text-align: left; margin: 100px 0 0 150px;}
 .title-txt h2{font-size: var(--title-size-smm);}
 .title-txt h2:nth-child(2){font-weight: 300; margin-bottom: 30px;}
-.title-txt p:nth-child(3){margin-bottom: 5px;}
 .title-txt p{font-weight: 200;}
+.title-txt p:nth-child(3){margin-bottom: 5px;}
+.title-bg{position: absolute; background: rgb(0,0,0);
+    background: linear-gradient(131deg, rgba(0,0,0,1) 0%, rgba(68,68,68,1) 84%, rgba(102,102,102,1) 100%); width: 100%; height: 100%; top: 0; z-index: -999;}
 
 
 /* asistobe */
 .asistobe{border-bottom: 1px solid #000;}
 .asistobe .moving-logo{display: flex; margin: 10px 0;}
-.asistobe .moving-logo img{width: 30%; margin-right: 20px;}
+.asistobe .moving-logo img{width: 20%; margin-right: 20px;}
 
 .asistobe-container{width: 75%; display: flex; margin: 100px auto 100px; justify-content: space-between;}
 .asistobe-container h5{font-size: var(--title-size-sxxx); margin-bottom: 10px;}
@@ -66,9 +70,9 @@ header{background-color: #fff;}
 .styleguide .styleguide-box p{font-weight: 800; margin-bottom: 20px;}
 .styleguide .designkeyword-img-box{display: flex; height: 80px; width: 100%; justify-content: space-between;}
 .styleguide .designkeyword-img-box li{width: 80%; height: 100%; text-align: center; line-height: 80px; color: #fff; font-weight: 200;}
-.styleguide .designkeyword-img-box .classic{background: url(../images/project/tamburins/designkeyword-1.jpg) no-repeat 50%; margin-right: 5px; background-size: cover;}
-.styleguide .designkeyword-img-box .simple{background: url(../images/project/tamburins/designkeyword-2.jpg) no-repeat 50% 70%; margin-right: 5px; background-size: cover;}
-.styleguide .designkeyword-img-box .soft{background: url(../images/project/tamburins/designkeyword-3.jpg) no-repeat 50%; background-size: cover;}
+.styleguide .designkeyword-img-box .classic{background: url(../images/project/marshall/designkeyword-1.jpg) no-repeat 50%; margin-right: 5px; background-size: cover;}
+.styleguide .designkeyword-img-box .simple{background: url(../images/project/marshall/designkeyword-2.jpg) no-repeat 50% 40%; margin-right: 5px; background-size: cover;}
+.styleguide .designkeyword-img-box .soft{background: url(../images/project/marshall/designkeyword-3.jpg) no-repeat 50% 30%; background-size: cover;}
 
 .styleguide .designkeyword-txt{display: flex; width: 100%; justify-content: space-between; margin: 10px 0 90px;}
 .styleguide .designkeyword-txt li:nth-child(1){width: calc(100% / 3 - 2.5px); text-align: center;}
@@ -92,23 +96,23 @@ header{background-color: #fff;}
     width: 150px; height: 1px; background-color: #00000036;
     z-index: 999;
 }
-.styleguide .color-1 .color-bg{background: url(../images/project/tamburins/logo-white.png) no-repeat 50%; background-size: 80%; background-color: #000; color: #ffffff;}
+.styleguide .color-1 .color-bg{background: url(../images/project/marshall/marshall-logo-white\ 1.png) no-repeat 50%; background-size: 60%;  background-color: #000; color: #ffffff;}
 .styleguide .color-1 .color-bg::after{background-color: #ffffff49;}
-.styleguide .color-2 .color-bg{background: url(../images/project/tamburins/color-bg-3.jpg) no-repeat 50% 100%; background-size: 100%; color: #ffffff;}
+.styleguide .color-2 .color-bg{background: url(../images/project/marshall/color-3.jpg) no-repeat 50% 50%; background-size: 100%; color: #ffffff;}
 .styleguide .color-2 .color-bg::after{background-color: #ffffff49;}
-.styleguide .color-3 .color-bg{background: url(../images/project/tamburins/logo-black.png) no-repeat 50%; background-size: 80%; background-color: #fff;}
-.styleguide .color-4 .color-bg{background: url(../images/project/tamburins/color-bg-4.jpg) no-repeat 50% 95%; background-size: 100%;}
+.styleguide .color-3 .color-bg{background: url(../images/project/marshall/Marshall_logo.svg\ 7.png) no-repeat 50%; background-size: 60%; background-color: #fff;}
 
 .styleguide .color-num{width: 40%; right: 0; position: absolute; height: 100%; text-align: right; padding-right: 20px;}
 .styleguide .color-1 .color-num{background-color: #000000; color: #fff;}
-.styleguide .color-2 .color-num{background-color: #6582AA; color: #fff;}
+.styleguide .color-2 .color-num{background-color: #FFBC958D; color: #fff;}
 .styleguide .color-3 .color-num{background-color: #FFFFFF;}
-.styleguide .color-4 .color-num{background-color: #F8E7C8;}
 
 
 .styleguide .typography-box{margin-bottom: 150px;}
 .styleguide .typography-box p{font-weight: normal;}
-.styleguide .typography-box img:nth-child(1){margin-bottom: 30px; margin-left: 5px;}
+.styleguide .typography-box img:nth-child(1){width: 50%; margin-bottom: 30px; margin-left: 5px;}
+.styleguide .typography-box img:nth-child(2){width: 30%; margin-bottom: 30px; margin-left: 5px;}
+.styleguide .typo{display: flex; flex-direction: column;}
 .styleguide .typography-box .typo::before{
     content: "";
     display: block;
@@ -127,7 +131,7 @@ header{background-color: #fff;}
 
 /* solution */
 .solution{width: 100%; padding-bottom: 100px;}
-.solution .solution-title{text-align: center; width: 90%; height: 180px; background: url(../images/project/tamburins/designkeyword-2.jpg) no-repeat 0%; background-size: 70%; margin: 0 auto; border-radius: 20px; line-height: 180px; font-size: var(--title-size-md); font-weight: bold; color: #fff; margin: 50px auto 80px; background-attachment: fixed;}
+.solution .solution-title{text-align: center; width: 90%; height: 180px; background: url(../images/project/marshall/solution-bg.jpg) 0% no-repeat ; background-size: 70%; margin: 0 auto; border-radius: 20px; line-height: 180px; font-size: var(--title-size-md); font-weight: bold; color: #fff; margin: 50px auto 80px; background-attachment: fixed;}
 
 .solution-box-1, .solution-box-2{width: 80%; margin: 0 0 0 12%; text-align: left;}
 .solution-box-1{margin-bottom: 150px;}
@@ -149,6 +153,11 @@ header{background-color: #fff;}
 .solution-txt{line-height: 1.5; grid-column: 2/3;}
 .code-img{grid-column: 2/3; margin-top: 20px; background-color: #1F1F1F; border-radius: 5px; padding: 10px;}
 .code-img img{width: 80%;}
+
+.solution-box-2 .solution-wrap .code-img-wrap{display: flex; grid-column: 2/3; margin-top: 20px;}
+.solution-box-2 .solution-wrap .code-img-wrap .code-img:first-child {margin-right: 1%;}
+.solution-box-2 .solution-wrap .code-img{padding-right: 7%;}
+.solution-box-2 .solution-wrap .code-img img{width: 100%;}
 
 /* footer */
 footer{height: 100px;}
