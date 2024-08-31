@@ -32,7 +32,6 @@ header{background-color: #fff;}
 
 
 /* project */
-/* .project{width: 70%;} */
 .title{height: 100vh; padding-top: 60px; margin: 0 auto; background: url(../images/project/marshall/title-bg.png) 50% 90% no-repeat; background-size: 70%; color: #fff;
 }
 .title-txt{text-align: left; margin: 100px 0 0 150px;}
@@ -58,7 +57,7 @@ header{background-color: #fff;}
 .asistobe-container .tobe-box .flex-group{justify-content: flex-end;}
 .flex-group{display: flex;}
 .flex-group p{width: fit-content; border: 1px solid #000; border-radius: 20px; padding: 1px 15px; margin: 2px 5px;}
-.asistobe-container img{margin: 40px 0;}
+.asistobe-container img{margin: 40px 0; width: 100%;}
 
 .asis-rotate{position: absolute; top: 46%; transform: rotate(-90deg); font-size: var(--title-size-sx); font-weight: bold; color: #F4F4F4; left: -15%;}
 .tobe-rotate{position: absolute; top: 46%; transform: rotate(90deg); font-size: var(--title-size-sx); font-weight: bold; color: #F4F4F4; right: -14%;}

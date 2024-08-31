@@ -2,28 +2,36 @@ $('.go-to-top').on('click',(e)=>{
     window.scrollTo({top:0, behavior:"smooth"})
 })
 
-// //메뉴 색상 변경
-$(document).ready(function() {
-    // Set the initial state of the header and goToTopimg
-    $('header').css('color', '#fff');
-    $('.go-to-top img').css('filter', 'invert(100%)');
 
-    $(window).scroll(function() {
-        var scrollPos = $(window).scrollTop();
-        var homeTopPos = $('.home-top').offset().top;
-        var homeTopHeight = $('.home-top').outerHeight();
-        var header = $('header');
-        var goToTopimg = $('.go-to-top img');
-
-        if (scrollPos >= homeTopPos && scrollPos < (homeTopPos + homeTopHeight * 0.9)) {
-            header.css('color', '#fff');
-            goToTopimg.css('filter', 'invert(100%)');
-        } else {
-            header.css('color', '');
-            goToTopimg.css('filter', '');
-        }
+// main-home-top
+const cursorClasses = {
+    'home-box-4': 'cursor-beaurit',
+    'home-box-6': 'cursor-marshall',
+    'home-box-15': 'cursor-tamburins',
+    'home-box-18': 'cursor-everparking'
+  };
+  
+  const topWraps = document.querySelectorAll('.home-top-box');
+  const cursors = document.querySelectorAll('.home-cursor');
+  
+  topWraps.forEach(wrap => {
+    const wrapClass = wrap.classList[1];
+    const cursorClass = cursorClasses[wrapClass];
+    const cursor = document.querySelector(`.${cursorClass}`);
+  
+    wrap.addEventListener('mouseenter', () => {
+      cursor.style.display = 'block';
     });
-});
+  
+    wrap.addEventListener('mouseleave', () => {
+      cursor.style.display = 'none';
+    });
+  
+    wrap.addEventListener('mousemove', (e) => {
+      cursor.style.left = `${e.clientX}px`;
+      cursor.style.top = `${e.clientY}px`;
+    });
+  });
 
 
 
@@ -155,3 +163,50 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+
+
+
+      
+// SVG 경로를 가져옵니다
+const path = document.getElementById('textPath');
+const circlesGroup = document.getElementById('circles');
+const pathLength = path.getTotalLength();
+
+const numCircles = 17;
+const circleRadius = 60;
+const startDelay = 3000; // 애니메이션 시작 전의 딜레이 시간 (5초)
+
+// 원을 먼저 추가하여 도형이 보이도록 설정
+for (let i = 0; i <= numCircles; i++) {
+  const point = path.getPointAtLength((i / numCircles) * pathLength);
+  
+  const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+  circle.setAttribute("cx", point.x);
+  circle.setAttribute("cy", point.y);
+  circle.setAttribute("r", circleRadius);
+  
+  // 초기 상태에서 원이 보이도록 설정
+  circle.style.fill = "#fff";
+  circle.style.stroke = "#000";
+  circle.style.strokeWidth = "10px";
+  circle.style.opacity = 1;
+  circle.style.transition = "none"; // 초기 상태에서 애니메이션 없음
+  
+  // 원을 그룹에 추가
+  circlesGroup.appendChild(circle);
+}
+
+// 5초 후에 원이 사라지도록 설정
+setTimeout(() => {
+  const circles = circlesGroup.querySelectorAll('circle');
+  
+  circles.forEach((circle, index) => {
+    setTimeout(() => {
+      // 원이 즉시 사라지도록 설정
+      circle.style.display = "none";
+    }, index * 100); // 각 원이 사라지는 간격 조절
+  });
+}, startDelay); // 5초 후에 사라지기 시작
+
+  
