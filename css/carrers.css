@@ -26,7 +26,7 @@ main{margin: 0 24px; width: calc(100% - 48px);}
 .carrers-box.carrers-box-3:hover{filter: grayscale(0%);}
 
 
-.carrers-txt-container{padding-top: 11%; width: fit-content; width: 100%;}
+.carrers-txt-container{padding-top: 11%; width: fit-content; width: 95%; margin-left: 5%; }
 .carrers-txt-wrap{width: 100%; list-style: inside;}
 
 .carrers-txt-wrap-1{padding: 1%; display: flex;}
@@ -41,7 +41,7 @@ main{margin: 0 24px; width: calc(100% - 48px);}
 .role-box li{line-height: 1.5;}
 .carrers-txt-box-2 .role-box li:nth-child(4){list-style: none;}
 .carrers-txt-box-2 .role-box li:nth-child(5){list-style: none;}
-.result-box{background-color: #eeeeee; width: 70%; border-radius: 10px; margin: 5%; padding: 2%;}
+.result-box{background-color: #eeeeee; width: 70%; border-radius: 10px; margin: 5% 5% 5% 0; padding: 2%;}
 .result-box p{margin: 0; line-height: 1.5;}
 
 .carrers-txt-wrap-1{display: none;}
