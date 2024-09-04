@@ -3,7 +3,7 @@
 body{text-align: center; font-family: var(--primary-font-ko); margin: 0;}
 
 /***** header *****/
-header{width: 100%; height: 60px; display: flex; position: fixed;  padding: 0 24px; z-index: 999999999;}
+header{width: 100%; height: 60px; display: flex; position: fixed;  padding: 0 24px; z-index: 999999999; }
 
 /* menu */
 header .menu{width: 470px; max-width: 470px; min-width: 200px; height: 40px; display: flex; justify-content: space-evenly; margin: auto;
@@ -16,11 +16,44 @@ header .menu li.active{font-weight: 100; font-style: italic;}
 
 header .menu li a{display: block; line-height: 40px;}
 /* logo */
-header .go-to-top {display: flex; }
+header .go-to-top {display: flex; position: absolute; height: 100%;}
 header .go-to-top:hover {filter: invert(50%)}
-header .go-to-top img{height: 70%; cursor: pointer; position: absolute; align-self: center;}
+header .go-to-top a{height: 75%; place-self: center;}
+header .go-to-top a img{cursor: pointer; height: 100%;}
+
 /* menu */
-header .nav-menu{ width: 84px; height: 60px; position: absolute; right: 0; top: 50%; transform: translateY(-50%); display: flex; justify-content: center; align-items: center;}
+header .nav-menu{ width: 84px; height: 60px; position: absolute; right: 0; top: 50%; transform: translateY(-50%); display: flex; justify-content: center; align-items: center; cursor: pointer;}
+
+.menu-show {
+    width: 25%;
+    height: 75vh;
+    border-radius: 20px 0 0 20px;
+    background-color: #000;
+    position: absolute;
+    right: 0;
+    padding: 4%;
+    color: #fff; 
+    opacity: 0;
+    visibility: hidden;
+    /* transition: opacity 0.3s ease, visibility 0.3s ease; */
+}
+
+.menu-show.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.menu-logo{ padding-bottom: 3%;}
+.menu-logo img{width: 15%; filter: invert(100%);}
+
+.menu-wrap{margin-top: 10%; text-align: left;}
+.menu-wrap h5{font-size: var(--title-size-sxx); margin: 20px 0;}
+.menu-wrap a h5:nth-child(1){margin-bottom: 20%}
+.menu-wrap p{line-height: 1.5; margin-left: 10%; }
+.menu-wrap p:hover{font-style: italic;}
+.menu-project{margin-bottom: 10%;}
+
 
 
 /***** main *****/

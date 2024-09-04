@@ -7,7 +7,7 @@ body::-webkit-scrollbar-thumb{border-radius: 20px; background-color: #0000001a;}
 body::-webkit-scrollbar-thumb:hover{border-radius: 20px; background-color: #00000042;}
 main{width: 70%; background-color: #FFE96A; }
 footer{width: 70%;}
-header{background-color: #fff;}
+/* header{background-color: #fff;} */
 
 /* side */
 .side{position: fixed; right: 0; height: 100%; width: 30%; padding-top: 60px; box-shadow: -3px 3px 11px 2px #55555509; background-color: #fff;}

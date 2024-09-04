@@ -5,6 +5,9 @@
     <title>BEAURIT PROJECT</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
     <!-- favicon -->
+    <link rel="icon" href="../assets/favicon/favicon-32x32.png" sizes="any"><!-- 32×32 -->
+    <link rel="apple-touch-icon" href="../assets/favicon/apple-touch-icon.png"><!-- 180×180 -->
+    <link rel="manifest" href="../assets/favicon/site.webmanifest">
     <!-- reset css -->
     <link rel="stylesheet" href="../assets/styles/reset.css">
     <!-- fonts css -->
@@ -16,27 +19,43 @@
     <!-- jQuery -->
     <!-- js -->
     <script src="../assets/jquery-3.7.1.min.js"></script>
+    <script src="../js/index.js"></script>
+
     
 </head>
 <body>
     
     <header>
         <div class="go-to-top">
-            <!-- <img src="./images/logo.png" alt="logo"> -->
+            <a href="../index.html"><img src="../images/logo.png" alt="logo"></a>
         </div>
 
-        <ul class="menu active">
-            <li class="menu-txt menuhome"><a href="#">Home,</a></li>
-            <li class="menu-txt menuproject" style="font-weight: 100; font-style: italic;"><a href="#">Project,</a></li>
-            <li class="menu-txt menucarrers"><a href="#">Carrers,</a></li>
-            <li class="menu-txt menuaboutme"><a href="#">About Me</a></li>
-        </ul>
 
-        <!-- <div class="ghost-menu">
-            <a href="#">
-                <img src="" alt="menu">
-            </a>
-        </div> -->
+        <div class="nav-menu">
+            Menu
+    </div>
+        <div class="menu-show">
+            <div class="menu-logo">
+            <img src="../images/logo.png" alt="">
+            </div>
+            <div class="menu-wrap">
+                <a href="../index.html"><h5>Home</h5></a>
+            <div class="menu-project">
+                <h5>Project</h5>
+                <a href="./project-marshall.html"><p>Marshall</p></a>
+                <a href="./project-tamburins.html"><p>Tamburins</p></a>
+                <a href="./project-beaurit.html"><p>Beaurit</p></a>
+                <a href="./project-everparking.html"><p>EverParking</p></a>
+            </div>
+
+            <div class="menu-carrers">
+                <h5>Carrers</h5>
+                <a href="./carrers.html?state=1"><p>Advertaising Marketing</p></a>
+                <a href="./carrers.html?state=2"><p>Digital Marketing</p></a>
+                <a href="./carrers.html?state=3"><p>Performance Marketing</p></a>
+            </div>
+            </div>
+        </div>
     </header>
 
     <aside class="side">
@@ -402,13 +421,13 @@
             <div class="footer-box-contents">
                 <div class="footer-box-gitstudy">
                     <a href="#">Git Study</a>
-                    <div class="go-to-git"><a href="#"><img src="../images/project/index-carrers-gotodetail.svg"
+                    <div class="go-to-git"><a href="https://github.com/jinnyaa/study"><img src="../images/project/index-carrers-gotodetail.svg"
                                 alt="go-to-gitstudy"></a>
                     </div>
                 </div>
                 <div class="footer-box-gitportfolio">
                     <a href="#">Git Portfolio</a>
-                    <div class="go-to-git"><a href="#"><img src="../images/project/index-carrers-gotodetail.svg"
+                    <div class="go-to-git"><a href="https://github.com/jinnyaa/Jinny_Portfolio"><img src="../images/project/index-carrers-gotodetail.svg"
                                 alt="go-to-gitportfolio"></a>
                     </div>
                 </div>

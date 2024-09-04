@@ -1,6 +1,106 @@
+
 $('.go-to-top').on('click',(e)=>{
     window.scrollTo({top:0, behavior:"smooth"})
 })
+
+document.addEventListener('DOMContentLoaded', function() {
+    const navMenu = document.querySelector('.nav-menu');
+    const menuShow = document.querySelector('.menu-show');
+
+    navMenu.addEventListener('mouseenter', function() {
+        menuShow.classList.add('visible');
+    });
+
+    menuShow.addEventListener('mouseleave', function() {
+        menuShow.classList.remove('visible');
+    });
+
+    navMenu.addEventListener('mouseleave', function() {
+        setTimeout(function() {
+            if (!menuShow.matches(':hover')) {
+                menuShow.classList.remove('visible');
+            }
+        }, 50);
+    });
+});
+
+
+// main-top
+const letters = ['c', 'a', 'v', 'e', 'i']; 
+const startDelay = 3000; 
+const endDelay = 2000; 
+
+letters.forEach(letter => {
+    const path = document.getElementById(`textPath-${letter}`);
+    const circlesGroup = document.getElementById(`circles-${letter}`);
+    const pathLength = path.getTotalLength();
+
+    let circleRadius, delayInterval, numCircles;
+
+    switch (letter) {
+        case 'c':
+            circleRadius = 60;
+            delayInterval = 100;
+            numCircles = 17;
+            break;
+        case 'a':
+            circleRadius = 60;
+            delayInterval = 100;
+            numCircles = 10;
+            break;
+        case 'i':
+            circleRadius = 40;
+            delayInterval = 90;
+            numCircles = 5;
+            break;
+        case 'v':
+            circleRadius = 70;
+            delayInterval = 120;
+            numCircles = 17;
+            break;
+        case 'e':
+            circleRadius = 60;
+            delayInterval = 90;
+            numCircles = 10;
+            break;
+    }
+
+    for (let i = 0; i <= numCircles; i++) {
+        const point = path.getPointAtLength((i / numCircles) * pathLength);
+        
+        const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+        circle.setAttribute("cx", point.x);
+        circle.setAttribute("cy", point.y);
+        circle.setAttribute("r", circleRadius);
+        
+        circle.style.opacity = 1;
+        circle.style.transition = "opacity 0.5s ease"; 
+        
+        circlesGroup.appendChild(circle);
+    }
+
+    setTimeout(() => {
+        const circles = circlesGroup.querySelectorAll('circle');
+        
+        circles.forEach((circle, index) => {
+            setTimeout(() => {
+                circle.style.opacity = 0;
+            }, index * delayInterval); 
+        });
+    }, startDelay); 
+
+    setTimeout(() => {
+        const circles = circlesGroup.querySelectorAll('circle');
+        
+        circles.forEach((circle, index) => {
+            setTimeout(() => {
+                circle.style.opacity = 1;
+            }, index * delayInterval); 
+        });
+    }, startDelay + endDelay); 
+});
+
+
 
 
 // main-home-top
@@ -91,19 +191,19 @@ function typingOn(){
 typingOn();
 
 // mouse-pointer
-document.addEventListener("mousemove", (e) => {
-    const x = e.clientX;
-    const y = e.clientY;
+// document.addEventListener("mousemove", (e) => {
+//     const x = e.clientX;
+//     const y = e.clientY;
   
-    $("#home-bottom-video-cursor").css('transform', 'translate(' + x + 'px, ' + y + 'px)');
+//     $("#home-bottom-video-cursor").css('transform', 'translate(' + x + 'px, ' + y + 'px)');
   
-    $('.home-bottom-video').eq(0).on('mouseover', function () {
-      $('.inner_wrap').eq(0).addClass('on');
-    });
-    $('.home-bottom-video').eq(0).on('mouseleave', function () {
-      $('.inner_wrap').eq(0).removeClass('on');
-    });
-  });
+//     $('.home-bottom-video').eq(0).on('mouseover', function () {
+//       $('.inner_wrap').eq(0).addClass('on');
+//     });
+//     $('.home-bottom-video').eq(0).on('mouseleave', function () {
+//       $('.inner_wrap').eq(0).removeClass('on');
+//     });
+//   });
 
   
 
@@ -165,48 +265,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
+    
 
 
-      
-// SVG 경로를 가져옵니다
-const path = document.getElementById('textPath');
-const circlesGroup = document.getElementById('circles');
-const pathLength = path.getTotalLength();
-
-const numCircles = 17;
-const circleRadius = 60;
-const startDelay = 3000; // 애니메이션 시작 전의 딜레이 시간 (5초)
-
-// 원을 먼저 추가하여 도형이 보이도록 설정
-for (let i = 0; i <= numCircles; i++) {
-  const point = path.getPointAtLength((i / numCircles) * pathLength);
-  
-  const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-  circle.setAttribute("cx", point.x);
-  circle.setAttribute("cy", point.y);
-  circle.setAttribute("r", circleRadius);
-  
-  // 초기 상태에서 원이 보이도록 설정
-  circle.style.fill = "#fff";
-  circle.style.stroke = "#000";
-  circle.style.strokeWidth = "10px";
-  circle.style.opacity = 1;
-  circle.style.transition = "none"; // 초기 상태에서 애니메이션 없음
-  
-  // 원을 그룹에 추가
-  circlesGroup.appendChild(circle);
-}
-
-// 5초 후에 원이 사라지도록 설정
-setTimeout(() => {
-  const circles = circlesGroup.querySelectorAll('circle');
-  
-  circles.forEach((circle, index) => {
-    setTimeout(() => {
-      // 원이 즉시 사라지도록 설정
-      circle.style.display = "none";
-    }, index * 100); // 각 원이 사라지는 간격 조절
-  });
-}, startDelay); // 5초 후에 사라지기 시작
-
-  
+    
