@@ -140,11 +140,11 @@ footer{width: 70%;}
 .solution-box-title .back{background-color: #000; position: absolute; top: 15%; left: .5%; z-index: -999;}
 
 .solution-box-txtwrap{width: 90%; margin: 50px auto; }
-.ploblem-wrap{display: grid; margin-bottom: 30px; grid-template-columns: .5fr 3fr;}
-.ploblem-wrap-title{margin-right: 20px;}
-.ploblem-wrap-title div{width: fit-content; border: 1px solid #000; padding: 10px 20px; border-radius: 50%; position: absolute;}
-.ploblem-wrap-title div:nth-child(2){color: #fff; background-color: #fff; position: absolute; z-index: -999; transform: rotate(-9deg);}
-.ploblem-txt{line-height: 1.5; grid-column: 2/3;}
+.problem-wrap{display: grid; margin-bottom: 30px; grid-template-columns: .5fr 3fr;}
+.problem-wrap-title{margin-right: 20px;}
+.problem-wrap-title div{width: fit-content; border: 1px solid #000; padding: 10px 20px; border-radius: 50%; position: absolute;}
+.problem-wrap-title div:nth-child(2){color: #fff; background-color: #fff; position: absolute; z-index: -999; transform: rotate(-9deg);}
+.problem-txt{line-height: 1.5; grid-column: 2/3;}
 
 .solution-wrap{display: grid; margin-bottom: 30px; grid-template-columns: .5fr 3fr;}
 .solution-wrap-title{margin-right: 20px;}
