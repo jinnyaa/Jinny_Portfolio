@@ -54,6 +54,7 @@
 .home-box-7, .home-box-14{text-align: left; place-content: center; font-size: var(--desc-size-sm); line-height: 1.5;}
 
 .home-box-4, .home-box-6, .home-box-15, .home-box-18{border-radius: 50%; filter: brightness(40%);}
+.home-box-4 a, .home-box-6 a, .home-box-15 a, .home-box-18 a{width: 100%; height: 100%; position: absolute; left: 0;}
 .home-box-4:hover, .home-box-6:hover, .home-box-15:hover, .home-box-18:hover{filter: brightness(100%); border-radius: 10%; transition: 1s;}
 
 
@@ -121,7 +122,7 @@
   left: 0;
   height: 100%;
   width: 90px;
-  animation: letter-r-ani-1 1.2s 3s alternate 2;
+  animation: letter-r-ani-1 1.3s 2s alternate 2;
 }
 
 .letter-r-2 {
@@ -129,7 +130,7 @@
   right: 0;
   width: 100%;
   height: 90px;
-  animation: letter-r-ani-2 1.5s 3s alternate 2;
+  animation: letter-r-ani-2 1.5s 2s alternate 2;
 }
 
 .letter-r-3 {
@@ -139,8 +140,8 @@
   height: 90px;
   transform: rotate(45deg);
   transform-origin: bottom right;
-  animation: letter-r-ani-3 1s 3s alternate 2;
-  animation-delay: 4s, 2s;
+  animation: letter-r-ani-3 1s 2s alternate 2;
+  animation-delay: 2s, 3s;
 }
 
 @keyframes letter-r-ani-1 {
@@ -162,12 +163,12 @@
 
 /* e 스타일 */
 .letter-e-fist { width: 80%; height: 80%; position: relative; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%); }
-.letter-e-fist-1, .letter-e-fist-2, .letter-e-fist-3 { left: 0; width: 100%; height: calc(120% / 3); background-color: #000; border-radius: 50px; position: absolute; opacity: 1; transition: opacity 0.5s ease, display 0s 2s; }
+.letter-e-fist-1, .letter-e-fist-2, .letter-e-fist-3 { left: 0; width: 100%; height: calc(120% / 3); background-color: #000; border-radius: 50px; position: absolute; opacity: 1; transition: opacity 0.5s ease, display 0s 1s; }
 
-.letter-e-fist-1 { top: 0; animation: letter-e-ani 1s 3s alternate 2; }
-.letter-e-fist-2 { animation: letter-e-ani 1s 3.3s alternate 2; }
-.letter-e-fist-3 { bottom: 0; animation: letter-e-ani 1s 3.6s alternate 2; 
-  animation-delay: 4s, 2s;
+.letter-e-fist-1 { top: 0; animation: letter-e-ani 1s 2.5s alternate 2; }
+.letter-e-fist-2 { animation: letter-e-ani 1s 2.8s alternate 2; }
+.letter-e-fist-3 { bottom: 0; animation: letter-e-ani 1s 3s alternate 2; 
+  animation-delay: 3s, 1s;
 }
 
 @keyframes letter-e-ani { 
@@ -189,12 +190,12 @@
 /* T 스타일 */
 .creative.letter-t{width: 80%; height: 80%; position: relative;}
 .letter-t-1, .letter-t-2, .letter-t-3, .letter-t-4, .letter-t-5{border: 20px solid #000; width: calc(100% / 3); border-radius: 50%; aspect-ratio: 1; position: absolute;  animation-delay: 4s, .5s;}
-.letter-t-1{top: 0; left: 0; animation: letter-t-ani 2s 3s alternate 2; }
-.letter-t-2{top: 0; animation: letter-t-ani 2s 3s alternate 2;}
-.letter-t-3{top: 0; right: 0; animation: letter-t-ani 2s 3s alternate 2;}
+.letter-t-1{top: 0; left: 0; animation: letter-t-ani 1.5s 2.5s alternate 2; }
+.letter-t-2{top: 0; animation: letter-t-ani 1.5s 2.5s alternate 2;}
+.letter-t-3{top: 0; right: 0; animation: letter-t-ani 1.5s 2.5s alternate 2;}
 
-.letter-t-4{top: 50%; transform: translateY(-50%); animation: letter-t-ani-4 1.5s 3.3s alternate 2;}
-.letter-t-5{bottom: 0; animation: letter-t-ani-5 1.5s 3s alternate 2;}
+.letter-t-4{top: 50%; transform: translateY(-50%); animation: letter-t-ani-4 1s 2.8s alternate 2;}
+.letter-t-5{bottom: 0; animation: letter-t-ani-5 1s 2.5s alternate 2;}
 
 @keyframes letter-t-ani { 
   0% { } 
@@ -483,8 +484,8 @@ footer .footer-main-gitportfolio{display: flex; margin-left: 10%;}
     .carrers-contents .carrers-contents-jobdetail{word-break: keep-all; font-size: var(--title-size-sxx);}
 
     /* aboutme */
-    .aboutme-card-title{font-size: var(--desc-size-sx); padding: 0 7px; margin: 0 3px 0 0; border-radius: 15px;}
-    .aboutme-card-txt{ font-size: var(--desc-size-sx);}
+    .aboutme-card-title{font-size: var(--desc-size-sxx); padding: 0 7px; margin: 0 3px 0 0; border-radius: 15px;}
+    .aboutme-card-txt{ font-size: var(--desc-size-sxx);}
 }
 
 
@@ -501,9 +502,13 @@ footer .footer-main-gitportfolio{display: flex; margin-left: 10%;}
   .carrers-txt-container .carrers-txt-box1 h3{font-size: var(--title-size-sxxx);}
 
     /* aboutme */
-    .aboutme-card-title{font-size: var(--desc-size-sm); padding: 0 7px; margin: 0 3px 0 0;}
+    .aboutme-card-title{font-size: var(--desc-size-sxx); padding: 0 7px; margin: 0 3px 0 0; word-break: keep-all;}
+    .aboutme-card-txt{ font-size: var(--desc-size-sxx);}
 
     .aboutme-card-back{padding: 20px;} 
+
+    /* sayhi */
+    .sayhi{ position: absolute; width: 45%; height: 40%; right: 0%; top: 50%; transform: translateY(-50%); display: grid; grid-template-rows: 1fr 1fr; grid-template-columns: 1fr;}
 }
 
 

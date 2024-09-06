@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // main-top
 const letters = ['c', 'a', 'v', 'e', 'i']; 
-const startDelay = 3000; 
+const startDelay = 1500; 
 const endDelay = 2000; 
 
 letters.forEach(letter => {
