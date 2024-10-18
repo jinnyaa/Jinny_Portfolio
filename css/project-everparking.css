@@ -45,9 +45,9 @@ footer{width: 70%;}
 .title .role-txt{display: flex; gap: 5px; margin-left: 10px;}
 .title .role-txt li{border: 1px solid #000; border-radius: 20px; padding: 1px 10px;}
 
-.title .title-bg-color{height: 800px; background-color: #9B57E4; margin-top: 400px; border-radius: 20% 0 0 20%;}
+.title .title-bg-color{height: 800px; background-color: #9B57E4; margin-top: 400px; border-radius: 20% 0 0 20%; z-index: -2; position: relative;}
 .title .title-bg{width: 90%; height: 80%; position: absolute; top: 15%; right: 30%;}
-.title .title-bg img{position: absolute; width: 100%;}
+.title .title-bg img{position: absolute; width: 100%; z-index: -1;}
 
 
 
